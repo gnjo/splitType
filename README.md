@@ -25,7 +25,8 @@ lrtbc is l r t b c and v vv h hh
 var fullbox = document.getElm..Id
 splitType({type:'lr',el:fullbox});
 //or
-splitType({type:'lrtbc',el:fullbox},{l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); //default size
+splitType({type:'lrtbc',el:fullbox},{gu:'8px',l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); 
+//default size. gu is gutter.
 ....
 //split panel access
 fullbox.querySelector('.l');  
