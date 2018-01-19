@@ -7,7 +7,7 @@ ___=>comp___ is complete the spec.
 
 ### splitType.js draft
 - package name is splitType.js
-- open funciton is one. splitType({type:__str__,el: element },{opt}); return element.   
+- open funciton is one. splitType({type:__str__,target: querySelector },{opt}); return element.   
 if element is not, write the document.body
  1. str is type pattern.  lrtbc mix. left,right,top,bottom,center,vertical: v and vv,holizontal: h and hh.
 ```
@@ -22,10 +22,10 @@ lrtbc is l r t b c and v vv h hh
 ```
  2. usage image. split.js is already exist tareget element on the HTML.
 ```
-var fullbox = document.getElm..Id
-splitType({type:'lr',el:fullbox});
+//target can be the document.querySelector str.
+var fullbox= splitType({type:'lr',target:'#fullbox'});
 //or
-splitType({type:'lrtbc',el:fullbox},{gu:'8px',l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); 
+var fullbox= splitType({type:'lrtbc',target:'#fullbox'},{gu:'8px',l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); 
 //default size. gu is gutter.
 ....
 //split panel access
