@@ -7,7 +7,8 @@ ___=>comp___ is complete the spec.
 
 ### splitType.js draft
 - package name is splitType.js
-- open funciton is one. splitType(str,{opt}); return element.
+- open funciton is one. splitType({type:__str__,el: element },{opt}); return element.   
+if element is not, write the document.body
  1. str is type pattern.  lrtbc mix. left,right,top,bottom,center,vertical: v and vv,holizontal: h and hh.
 ```
 lr is  l r and v
@@ -19,15 +20,12 @@ rtb is r t b and v h
 lrtb is l r t b and v vv h
 lrtbc is l r t b c and v vv h hh
 ```
- 2. usage image
+ 2. usage image. split.js is already exist tareget element on the HTML.
 ```
-var draw = document.body;
-var box =splitType('lr');
-box.id='testbox';
-draw.appendChild(box);
+var fullbox = document.getElm..Id
+splitType({type:'lr',el:fullbox});
 //or
-var fullbox =splitType('lrtbc',{l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); //default size
-fullbox.id= ....
+splitType({type:'lrtbc',el:fullbox},{l:'20%',r:'80%',t:'20%',c:'60%',b:'20%'}); //default size
 ....
 //split panel access
 fullbox.querySelector('.l');  
